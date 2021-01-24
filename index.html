@@ -7,7 +7,7 @@
   <h1 style="text-align:center;"> Website Name TBD </h1>
     <p>
     <h3> Test Anxiety </h4>
-    <h4>I value how well I perform on school tests over how well I perform in other activities, like sports or music.</h3>
+    <h4>I value how well I perform on school tests over how well I perform in other activities, like sports or music.</h4>
     <input type="radio" name="stress" value=1>1
     <br>
     <input type="radio" name="stress" value=2>2
@@ -22,17 +22,81 @@
       Submit
     </button>
    <div id="result"></div> 
+  <h4>I tend to have a solid foundation of the knowledge on school tests before the exam day but perform badly on exams because of exam-day stress.</h4>
+    <input type="radio" name="stress" value=1>1
+    <br>
+    <input type="radio" name="stress" value=2>2
+    <br>
+    <input type="radio" name="stress" value=3>3
+    <br>
+    <input type="radio" name="stress" value=4>4
+    <br>
+    <input type="radio" name="stress" value=5>5
+    <br>
+    <button type="button" onclick="displayRadioValue()">
+      Submit
+    </button>
+   <div id="result"></div> 
+  <h4>I perform better on homework assignments then tests.</h4>
+    <input type="radio" name="stress" value=1>1
+    <br>
+    <input type="radio" name="stress" value=2>2
+    <br>
+    <input type="radio" name="stress" value=3>3
+    <br>
+    <input type="radio" name="stress" value=4>4
+    <br>
+    <input type="radio" name="stress" value=5>5
+    <br>
+    <button type="button" onclick="displayRadioValue()">
+      Submit
+    </button>
+   <div id="result"></div> 
+  <h4>I am not comfortable going to my teachers to ask for help or communicate feelings of stress and anxiety. </h4>
+    <input type="radio" name="stress" value=1>1
+    <br>
+    <input type="radio" name="stress" value=2>2
+    <br>
+    <input type="radio" name="stress" value=3>3
+    <br>
+    <input type="radio" name="stress" value=4>4
+    <br>
+    <input type="radio" name="stress" value=5>5
+    <br>
+    <button type="button" onclick="displayRadioValue()">
+      Submit
+    </button>
+   <div id="result"></div> 
+  <h4>My worst fear is getting a bad exam grade.</h4>
+    <input type="radio" name="stress" value=1>1
+    <br>
+    <input type="radio" name="stress" value=2>2
+    <br>
+    <input type="radio" name="stress" value=3>3
+    <br>
+    <input type="radio" name="stress" value=4>4
+    <br>
+    <input type="radio" name="stress" value=5>5
+    <br>
+    <button type="button" onclick="displayRadioValue()">
+      Submit
+    </button>
+   <div id="result"></div> 
+  <script>
+    if(displayRadioValue()>20){
+      document.getElementById("result").innerHTML = "A high amount of your stress comes from testing";
+  </script>
    <script> 
         function displayRadioValue() { 
             var ele = document.getElementsByName("stress"); 
-            var sum = 0;
+            var sum = [0,0,0,0,0];
               
             for(i = 0; i < ele.length; i++) { 
                 if(ele[i].checked)
                   sum += ele[i].value;
-                document.getElementById("result").innerHTML
-                        = sum; 
+       
             } 
+          return sum;
         } 
     </script> 
     </p>
