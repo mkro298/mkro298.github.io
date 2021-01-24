@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Scho</title>
+<title>Schoo</title>
 </head>
 <style>
 	table, th, td {
@@ -99,7 +99,7 @@ th, td {
                 alert(stress1[i].value); }
                 }
                 
-	var stress2 = document.getElementsByName('stress2');
+			 var stress2 = document.getElementsByName('stress2');
         
             for (var i = 0, length = stress2.length; i < length; i++) {
               if (stress2[i].checked) {
@@ -110,42 +110,6 @@ th, td {
              alert(sum);
  
         } 
-	var stress3 = document.getElementsByName('stress3');
-        
-            for (var i = 0, length = stress3.length; i < length; i++) {
-              if (stress3[i].checked) {
-                sum = sum + parseInt(stress3[i].value);
-                alert(stress3[i].value); }
-                }
-             
-             alert(sum);
- 
-        } 
-	var stress4 = document.getElementsByName('stress4');
-        
-            for (var i = 0, length = stress4.length; i < length; i++) {
-              if (stress4[i].checked) {
-                sum = sum + parseInt(stress4[i].value);
-                alert(stress4[i].value); }
-                }
-             
-             alert(sum);
- 
-        } 
-	var stress5 = document.getElementsByName('stress5');
-        
-            for (var i = 0, length = stress5.length; i < length; i++) {
-              if (stress5[i].checked) {
-                sum = sum + parseInt(stress5[i].value);
-                alert(stress5[i].value); }
-                }
-             
-             alert(sum);
- 
-        } 
-	if(parseInt(sum)>19){
-		alert("anxiety");
-	}
 </script>
 </body>
 </html>
