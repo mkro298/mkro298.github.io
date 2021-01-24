@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Schoo</title>
+<title>Scho</title>
 </head>
 <style>
 	table, th, td {
@@ -96,7 +96,7 @@ th, td {
             for (var i = 0, length = stress1.length; i < length; i++) {
               if (stress1[i].checked) {
                 sum = sum + parseInt(stress1[i].value);
-                alert(stress1[i].value); }
+                }
                 }
                 
 			 var stress2 = document.getElementsByName('stress2');
@@ -104,33 +104,33 @@ th, td {
             for (var i = 0, length = stress2.length; i < length; i++) {
               if (stress2[i].checked) {
                 sum = sum + parseInt(stress2[i].value);
-                alert(stress2[i].value); }
+                }
                 }
                 var stress3 = document.getElementsByName('stress3');
         
             for (var i = 0, length = stress3.length; i < length; i++) {
               if (stress3[i].checked) {
                 sum = sum + parseInt(stress3[i].value);
-                alert(stress3[i].value); }
+                 }
                 }
                 var stress4 = document.getElementsByName('stress4');
         
             for (var i = 0, length = stress4.length; i < length; i++) {
               if (stress4[i].checked) {
                 sum = sum + parseInt(stress4[i].value);
-                alert(stress4[i].value); }
+                }
                 }
                 var stress5 = document.getElementsByName('stress5');
         
             for (var i = 0, length = stress5.length; i < length; i++) {
               if (stress5[i].checked) {
                 sum = sum + parseInt(stress5[i].value);
-                alert(stress5[i].value); }
+                 }
                 }
              
              alert(sum);
 		if(sum>19){
-			alert("greater");
+			document.write("A main cause of your stress could be due to your testing anxiety. Click the help button to see resources to help you, otherwise click the next button to proceed to the next test");
 		}
  
         } 
