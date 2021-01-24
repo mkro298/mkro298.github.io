@@ -19,11 +19,17 @@
     <input type="radio" name="stress" value=5>My worst fear is getting a bad exam grade. 
     <br>
     <input type="submit" value="Submit">
-    <script>
-      if(alert($('input[name=stress]:checked').val())==1){
-        <h3>1</h3>
-      }
-    </script>
+   <script> 
+        function displayRadioValue() { 
+            var ele = document.getElementsByName('stress'); 
+              
+            for(i = 0; i < ele.length; i++) { 
+                if(ele[i].checked) 
+                document.getElementById("result").innerHTML
+                        = "Stress: "+ele[i].value; 
+            } 
+        } 
+    </script> 
     </p>
  
    </form>
