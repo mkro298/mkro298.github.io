@@ -81,7 +81,7 @@
     <button type="button" onclick="displayRadioValue()">
       Submit
     </button>
-  <p id="demo"></p>
+
    <script> 
      var sum=0;
         function displayRadioValue() { 
@@ -89,6 +89,9 @@
             for(i = 0; i < ele.length; i++) { 
                 if(ele[i].checked)
                   sum += ele[i].value;
+              document.getElementById("Stress").innerHTML 
+                = sum;
+
             }
         } 
      if(sum>20){
