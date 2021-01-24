@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+</head>
+<style>
+	table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
 
+<body style="background-color:rgba(255, 99, 71, 0.5);">
+  <h1 style="text-align:center;"> Sources of Stress in School </h1>
+    <p>
+
+<body>
+	<p id="demo"></p>
+
+    
+ <table style="width:100%">
+    
+ 
+  <tr>
+  <td></td>
+    <td><label for="stress1">Strongly Disgaree</label></td>
+    <td> <label for="stress1">Disagree</label></td>
+    <td> <label for="stress1">Neutral</label></td>
+    <td> <label for="stress1">Agree</label></td>
+    <td> <label for="stress1">Strongly Agree</label></td>
+  </tr>
+  <tr>
+  <td>  <h4>I don’t have friends who are supportive or encouraging, they do not help me feel better when I’m down.</h4></td> 
+ 
+   <td><input type="radio" name="stress1" value=1></td>
+    <td> <input type="radio" name="stress1" value=2></td>
+    <td> <input type="radio" name="stress1" value=3></td>
+    <td> <input type="radio" name="stress1" value=4></td>
+    <td> <input type="radio" name="stress1" value=5></td>
+    
+  </tr>
+  <td>  <h4>I don’t have an adult in my life whom I can trust and reach out to for help or advice.</h4></td> 
+ 
+   <td><input type="radio" name="stress2" value=1></td>
+    <td> <input type="radio" name="stress2" value=2></td>
+    <td> <input type="radio" name="stress2" value=3></td>
+    <td> <input type="radio" name="stress2" value=4></td>
+    <td> <input type="radio" name="stress2" value=5></td>
+    
+  </tr>
+   <td>  <h4>I cannot take action or speak out when I feel like something is wrong.</h4></td> 
+ 
+   <td><input type="radio" name="stress3" value=1></td>
+    <td> <input type="radio" name="stress3" value=2></td>
+    <td> <input type="radio" name="stress3" value=3></td>
+    <td> <input type="radio" name="stress3" value=4></td>
+    <td> <input type="radio" name="stress3" value=5></td>
+    
+  </tr>
+   <td>  <h4>I tend to shut my loved ones out of my life whenever I am going through something.</h4></td> 
+ 
+   <td><input type="radio" name="stress4" value=1></td>
+    <td> <input type="radio" name="stress4" value=2></td>
+    <td> <input type="radio" name="stress4" value=3></td>
+    <td> <input type="radio" name="stress4" value=4></td>
+    <td> <input type="radio" name="stress4" value=5></td>
+    
+  </tr>
+   <td>  <h4>I feel powerless and helpless at school whenever a problem arises with another classmate.</h4></td> 
+ 
+   <td><input type="radio" name="stress5" value=1></td>
+    <td> <input type="radio" name="stress5" value=2></td>
+    <td> <input type="radio" name="stress5" value=3></td>
+    <td> <input type="radio" name="stress5" value=4></td>
+    <td> <input type="radio" name="stress5" value=5></td>
+    
+  </tr>
+  
+  
+</table>
+ <button type="button" onclick="displayRadioValue()">
+      Submit
+    </button>
+   <div id="result"></div> 
+</form> 
+<script>
+    var sum = 0;
+    
+        function displayRadioValue() { 
+      	
+           var stress1 = document.getElementsByName('stress1');
+        
+            for (var i = 0, length = stress1.length; i < length; i++) {
+              if (stress1[i].checked) {
+                sum = sum + parseInt(stress1[i].value);
+                }
+                }
+                
+			 var stress2 = document.getElementsByName('stress2');
+        
+            for (var i = 0, length = stress2.length; i < length; i++) {
+              if (stress2[i].checked) {
+                sum = sum + parseInt(stress2[i].value);
+                }
+                }
+                var stress3 = document.getElementsByName('stress3');
+        
+            for (var i = 0, length = stress3.length; i < length; i++) {
+              if (stress3[i].checked) {
+                sum = sum + parseInt(stress3[i].value);
+                 }
+                }
+                var stress4 = document.getElementsByName('stress4');
+        
+            for (var i = 0, length = stress4.length; i < length; i++) {
+              if (stress4[i].checked) {
+                sum = sum + parseInt(stress4[i].value);
+                }
+                }
+                var stress5 = document.getElementsByName('stress5');
+        
+            for (var i = 0, length = stress5.length; i < length; i++) {
+              if (stress5[i].checked) {
+                sum = sum + parseInt(stress5[i].value);
+                 }
+                }
+             
+		if(sum>19){
+			document.getElementById("demo").innerHTML ="Bullying or a sense of isolation from your peers could be causing difficulties in your life. Click the help button to see resources to help you, otherwise click the next button to proceed to the next test";
+		}
+ 
+        } 
+</script>
+<a href="academic.html">Next</a>
+<a href="bullyinghelp.html">Help</a>
+</body>
+</html>
