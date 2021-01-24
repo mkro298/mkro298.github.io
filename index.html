@@ -1,100 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sc</title>
+<title>S</title>
 </head>
 <body style="background-color:rgba(255, 99, 71, 0.5);">
   <h1 style="text-align:center;"> Sources of Stress in School </h1>
     <p>
-    <h3> Test Anxiety </h4>
-    <h4>I value how well I perform on school tests over how well I perform in other activities, like sports or music.</h4>
-    <input type="radio" name="stress" value=1>1
-    <br>
-    <input type="radio" name="stress" value=2>2
-    <br>
-    <input type="radio" name="stress" value=3>3
-    <br>
-    <input type="radio" name="stress" value=4>4
-    <br>
-    <input type="radio" name="stress" value=5>5
-    <br>
-   
-  
-  <h4>I tend to have a solid foundation of the knowledge on school tests before the exam day but perform badly on exams because of exam-day stress.</h4>
-    <input type="radio" name="stress" value=1>1
-    <br>
-    <input type="radio" name="stress" value=2>2
-    <br>
-    <input type="radio" name="stress" value=3>3
-    <br>
-    <input type="radio" name="stress" value=4>4
-    <br>
-    <input type="radio" name="stress" value=5>5
-    <br>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+
+
+<body>
+
+
+    
+ <table style="width:100%">
+    
  
+  <tr>
+  <td></td>
+    <td><label for="stress1">Strongly Disgaree</label></td>
+    <td> <label for="stress1">Disagree</label></td>
+    <td> <label for="stress1">Neutral</label></td>
+    <td> <label for="stress1">Agree</label></td>
+    <td> <label for="stress1">Strongly Agree</label></td>
+  </tr>
+  <tr>
+  <td>  <h4>I value how well I perform on school tests over how well I perform in other activities, like sports or music.</h4></td> 
+ 
+   <td><input type="radio" name="stress1" value=1></td>
+    <td> <input type="radio" name="stress1" value=2></td>
+    <td> <input type="radio" name="stress1" value=3></td>
+    <td> <input type="radio" name="stress1" value=4></td>
+    <td> <input type="radio" name="stress1" value=5></td>
+    
+  </tr>
+  <td>  <h4>I value how well I perform on school tests over how well I perform in other activities, like sports or music.</h4></td> 
+ 
+   <td><input type="radio" name="stress2" value=1></td>
+    <td> <input type="radio" name="stress2" value=2></td>
+    <td> <input type="radio" name="stress2" value=3></td>
+    <td> <input type="radio" name="stress2" value=4></td>
+    <td> <input type="radio" name="stress2" value=5></td>
+    
+  </tr>
   
-  <h4>I perform better on homework assignments then tests.</h4>
-    <input type="radio" name="stress" value=1>1
-    <br>
-    <input type="radio" name="stress" value=2>2
-    <br>
-    <input type="radio" name="stress" value=3>3
-    <br>
-    <input type="radio" name="stress" value=4>4
-    <br>
-    <input type="radio" name="stress" value=5>5
-    <br>
-   
-
-  <h4>I am not comfortable going to my teachers to ask for help or communicate feelings of stress and anxiety. </h4>
-    <input type="radio" name="stress" value=1>1
-    <br>
-    <input type="radio" name="stress" value=2>2
-    <br>
-    <input type="radio" name="stress" value=3>3
-    <br>
-    <input type="radio" name="stress" value=4>4
-    <br>
-    <input type="radio" name="stress" value=5>5
-    <br>
-   
-
-  <h4>My worst fear is getting a bad exam grade.</h4>
-    <input type="radio" name="stress" value=1>1
-    <br>
-    <input type="radio" name="stress" value=2>2
-    <br>
-    <input type="radio" name="stress" value=3>3
-    <br>
-    <input type="radio" name="stress" value=4>4
-    <br>
-    <input type="radio" name="stress" value=5>5
-    <br>
-    <button type="button" onclick="displayRadioValue()">
+  
+</table>
+ <button type="button" onclick="displayRadioValue()">
       Submit
     </button>
    <div id="result"></div> 
-
-   <script> 
-     var sum=0;
+</form> 
+<script>
+    var sum = 0;
+    
         function displayRadioValue() { 
-            var ele = document.getElementsByName("stress");
-            for(i = 0; i < ele.length; i++) { 
-                if(ele[i].checked)
-                  sum += ele[i].value;
-              document.getElementById("results").innerHTML 
-                = sum;
-
-            }
+      	
+           var stress1 = document.getElementsByName('stress1');
+        
+            for (var i = 0, length = stress1.length; i < length; i++) {
+              if (stress1[i].checked) {
+                sum = sum + parseInt(stress1[i].value);
+                alert(stress1[i].value); }
+                }
+                
+			 var stress2 = document.getElementsByName('stress2');
+        
+            for (var i = 0, length = stress2.length; i < length; i++) {
+              if (stress2[i].checked) {
+                sum = sum + parseInt(stress2[i].value);
+                alert(stress2[i].value); }
+                }
+             
+             alert(sum);
+ 
         } 
-     if(sum>20){
-            document.getElementById("demo").innerHTML = 5 + 6;
-
-          }
-     
-    </script> 
-    </p>
-
-
+</script>
 </body>
 </html>
