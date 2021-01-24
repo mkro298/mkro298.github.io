@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>School</title>
+<title>Sch</title>
 </head>
 <body style="background-color:rgba(255, 99, 71, 0.5);">
   <h1 style="text-align:center;"> Sources of Stress in School </h1>
@@ -36,7 +36,7 @@
     <button type="button" onclick="displayRadioValue()">
       Submit
     </button>
-   <div id="result"></div> 
+  
   <h4>I perform better on homework assignments then tests.</h4>
     <input type="radio" name="stress" value=1>1
     <br>
@@ -51,7 +51,7 @@
     <button type="button" onclick="displayRadioValue()">
       Submit
     </button>
-   <div id="result"></div> 
+
   <h4>I am not comfortable going to my teachers to ask for help or communicate feelings of stress and anxiety. </h4>
     <input type="radio" name="stress" value=1>1
     <br>
@@ -66,7 +66,7 @@
     <button type="button" onclick="displayRadioValue()">
       Submit
     </button>
-   <div id="result"></div> 
+
   <h4>My worst fear is getting a bad exam grade.</h4>
     <input type="radio" name="stress" value=1>1
     <br>
@@ -81,7 +81,7 @@
     <button type="button" onclick="displayRadioValue()">
       Submit
     </button>
-   <div id="result"></div> 
+  <p id="demo"></p>
    <script> 
      var sum=0;
         function displayRadioValue() { 
@@ -92,7 +92,8 @@
             }
         } 
      if(sum>20){
-            alert("A high amount of your stress comes from testing");
+            document.getElementById("demo").innerHTML = 5 + 6;
+
           }
      
     </script> 
