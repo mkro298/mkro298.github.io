@@ -25,11 +25,13 @@
    <script> 
         function displayRadioValue() { 
             var ele = document.getElementsByName("stress"); 
+            var sum = 0;
               
             for(i = 0; i < ele.length; i++) { 
-                if(ele[i].checked) 
+                if(ele[i].checked)
+                  sum += ele[i].value;
                 document.getElementById("result").innerHTML
-                        = "Stress: "+ele[i].value; 
+                        = sum; 
             } 
         } 
     </script> 
